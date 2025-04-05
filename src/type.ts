@@ -6,6 +6,6 @@ export type DoctorType = {
   location: string;
   experience: number;
   about: string;
-  workingTime: string;
+  workingTime: [string];
   education: string;
 };

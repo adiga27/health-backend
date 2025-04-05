@@ -29,10 +29,12 @@ const doctorSchema = new mongoose.Schema(
       type: String,
       required: [true, "about is required"],
     },
-    workingTime: {
-      type: String,
-      required: [true, "working time is required"],
-    },
+    workingTime: [
+      {
+        type: String,
+        required: [true, "working time is required"],
+      },
+    ],
     education: {
       type: String,
       required: [true, "education is required"],
